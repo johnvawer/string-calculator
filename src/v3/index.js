@@ -12,7 +12,7 @@ v3.add = (numbers) => {
   const delimiter = optionalDelimiter ? optionalDelimiter[1] : ',';
 
   // Get the numbers from the array and split them
-  const numbersArray = numbers.split("\n").pop();
+  const numbersArray = numbers.split('\n').pop();
   const numbersToAdd = numbersArray.split(delimiter).map(Number);
 
   return numbersToAdd.reduce((total, number) => {
